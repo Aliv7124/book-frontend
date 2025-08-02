@@ -1,10 +1,11 @@
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
   const [theme, setTheme] = useState("light");
+  const navigate = useNavigate();
 
   const change = () => {
     if (theme === "light") {
@@ -14,6 +15,11 @@ function Navbar() {
       setTheme("light");
       document.documentElement.classList.remove("dark");
     }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    navigate('/login');
   };
 
   return (
@@ -61,13 +67,7 @@ function Navbar() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
-              <g
-                strokeLinejoin="round"
-                strokeLinecap="round"
-                strokeWidth="2.5"
-                fill="none"
-                stroke="currentColor"
-              >
+              <g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2.5" fill="none" stroke="currentColor">
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.3-4.3" />
               </g>
@@ -81,59 +81,39 @@ function Navbar() {
 
           {/* Theme Toggle */}
           <label
-            className="flex items-center gap-2 px-4 py-1 bg-white border border-gray-300 rounded-md shadow-sm text-black cursor-pointer"
+            className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm text-black cursor-pointer"
             onClick={change}
           >
             {/* Sun Icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-yellow-500"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-yellow-500">
               <circle cx="12" cy="12" r="5" />
               <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
             </svg>
-
             <input
               type="checkbox"
               className="toggle theme-controller bg-gray-300 checked:bg-blue-600 border-gray-400"
               checked={theme === "dark"}
               readOnly
             />
-
             {/* Moon Icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-blue-600"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-600">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
             </svg>
           </label>
 
-          {/* Login Button */}
-          <Link to="/login" className="btn btn-outline">
-            Login
-          </Link>
-          
+          {/* Login / Logout Button */}
+          {localStorage.getItem('token') ? (
+            <button onClick={handleLogout} className="btn btn-outline btn-error">
+              Logout
+            </button>
+          ) : (
+            <Link to="/login" className="btn btn-outline">
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </>
-    
   );
 }
 
