@@ -39,7 +39,7 @@ function App() {
   return (
     <>
      <div className="min-h-screen bg-white text-black">
-    <Router>
+    <Router  basename="/book-frontend">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
