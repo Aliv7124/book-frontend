@@ -11,7 +11,7 @@ const[book,setBook]=useState([]);
    useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get("https://book-ke78.onrender.com/book");
         setBook(res.data.filter(item => item.category === "Story"));
       } catch (error) {
         console.log(error);

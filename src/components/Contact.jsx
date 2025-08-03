@@ -10,7 +10,7 @@ const [form, setForm] = useState({ name: '', email: '', message: '' });
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:4001/api/contact/send', {
+      const res = await fetch('https://book-ke78.onrender.com/api/contact/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
