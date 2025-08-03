@@ -12,7 +12,7 @@ const[book,setBook]=useState([]);
     const getBook = async () => {
       try {
         const res = await axios.get("http://localhost:4001/book");
-        setBook(res.data.filter(item => item.category === "free"));
+        setBook(res.data.filter(item => item.category === "Story"));
       } catch (error) {
         console.log(error);
       }

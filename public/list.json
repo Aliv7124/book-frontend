@@ -3,15 +3,15 @@
     "id":1,
     "name":"Story Book",
     "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    "price":"$0",
+    "price":"$10",
    "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg",
-    "category":"free"
+    "category":"Story"
    
 },
     
     {
         "id":2,
-        "name":"Story Book",
+        "name":"Adventure Book",
         "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
         "price":"$30",
     "category":"adventure",
@@ -21,8 +21,8 @@
     "id":3,
     "name":"Story Book",
     "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    "price":"$0",
- "category":"free",
+    "price":"$20",
+ "category":"Story",
     "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
 },
 
@@ -30,24 +30,24 @@
     "id":4,
     "name":"Story Book",
     "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    "price":"$0",
-"category":"free",
+    "price":"$30",
+"category":"Story",
     "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
 },
 {
     "id":5,
     "name":"Story Book",
     "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    "price":"$0",
-"category":"free",
+    "price":"$25",
+"category":"Story",
    "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
 },
 {
     "id":6,
-    "name":"Story Book",
+    "name":"Cricket Book",
     "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
     "price":"$50",
-    "category":"free",
+    "category":"sports",
    "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
 },
 {
@@ -63,23 +63,87 @@
     "name":"historical Book",
     "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
     "price":"$70",
-     "category":"study",
+     "category":"Historical",
    "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
 },
 {
     "id":9,
     "name":"Story Book",
     "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    "price":"$0",
-    "category":"free",
+    "price":"$15",
+    "category":"Story",
    "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
 },
 {
     "id":10,
     "name":"Sports Book",
     "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
-    "price":50,
+    "price":"$25",
    "category":"sports",
   "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
+},
+{
+    "id":11,
+    "name":"Cooking Book",
+    "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    "price":"$50",
+   "category":"Food",
+  "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
+},
+{
+    "id":12,
+    "name":"Ditective Book",
+    "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    "price":"$40",
+   "category":"Spy",
+  "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
+},
+{
+    "id":13,
+    "name":"Horror Book",
+    "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    "price":"$45",
+   "category":"Horror",
+  "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
+},
+{
+    "id":14,
+    "name":"Comic Book",
+    "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    "price":"$40",
+   "category":"Comic",
+  "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
+},
+{
+    "id":15,
+    "name":"Tourism Book",
+    "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    "price":"$50",
+   "category":"Tourisam",
+  "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
+},
+{
+    "id":16,
+    "name":"Story Book",
+    "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    "price":"$20",
+ "category":"Story",
+    "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
+},
+{
+    "id":17,
+    "name":"Story Book",
+    "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    "price":"$20",
+ "category":"Story",
+    "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
+},
+{
+    "id":18,
+    "name":"Story Book",
+    "title":"Lorem ipsum dolor sit, amet consectetur adipisicing elit",
+    "price":"$20",
+ "category":"Story",
+    "image":"https://www.realsimple.com/thmb/KrGb42aamhHKaMzWt1Om7U42QsY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/great-books-for-anytime-2000-4ff4221eb1e54b659689fef7d5e265d5.jpg"
 }
 ]

@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -24,9 +22,9 @@ function Navbar() {
 
   return (
     <>
-      <div className={`navbar shadow-sm ${theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"}`}>
+      <div className={`navbar flex-wrap shadow-sm ${theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"}`}>
         {/* Navbar Start */}
-        <div className="navbar-start">
+        <div className="navbar-start w-full lg:w-auto">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,7 +33,7 @@ function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className={`menu menu-sm dropdown-content mt-3 p-2 shadow rounded-box w-52 z-10 ${
+              className={`menu menu-sm dropdown-content mt-3 p-2 shadow rounded-box w-52 z-50 ${
                 theme === "light" ? "bg-white text-black" : "bg-gray-800 text-white"
               }`}
             >
@@ -59,7 +57,7 @@ function Navbar() {
         </div>
 
         {/* Navbar End */}
-        <div className="navbar-end flex items-center gap-3">
+        <div className="navbar-end flex flex-col sm:flex-row gap-2 items-start sm:items-center w-full lg:w-auto mt-3 lg:mt-0 px-2">
           {/* Search Box */}
           <label className="input hidden lg:flex items-center gap-2 border border-gray-300 rounded-md px-3 py-2 bg-white text-black shadow-sm w-72">
             <svg
@@ -84,7 +82,6 @@ function Navbar() {
             className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm text-black cursor-pointer"
             onClick={change}
           >
-            {/* Sun Icon */}
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-yellow-500">
               <circle cx="12" cy="12" r="5" />
               <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
@@ -95,7 +92,6 @@ function Navbar() {
               checked={theme === "dark"}
               readOnly
             />
-            {/* Moon Icon */}
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-600">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
             </svg>
@@ -103,11 +99,11 @@ function Navbar() {
 
           {/* Login / Logout Button */}
           {localStorage.getItem('token') ? (
-            <button onClick={handleLogout} className="btn btn-outline btn-error">
+            <button onClick={handleLogout} className="btn btn-outline btn-error w-full sm:w-auto">
               Logout
             </button>
           ) : (
-            <Link to="/login" className="btn btn-outline">
+            <Link to="/login" className="btn btn-outline w-full sm:w-auto">
               Login
             </Link>
           )}
@@ -118,3 +114,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+

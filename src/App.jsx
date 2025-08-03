@@ -9,6 +9,7 @@ import Signup from "./components/Signup";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import PrivateRoute from "./components/PrivateRoute";
+import Checkout from "./components/Checkout";
 /*
 function App() {
  
@@ -66,6 +67,14 @@ function App() {
           element={
             <PrivateRoute>
               <Course />
+            </PrivateRoute>
+          }
+        />
+         <Route
+          path="/checkout"
+          element={
+            <PrivateRoute>
+              <Checkout />
             </PrivateRoute>
           }
         />
